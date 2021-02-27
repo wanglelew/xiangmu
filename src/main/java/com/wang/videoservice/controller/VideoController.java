@@ -19,7 +19,7 @@ public class VideoController {
     private videoService videoService;
     @RequestMapping("/getVideo")
     private Video getByArtcileId(Long articleId){
-        System.out.println(1);
+        System.out.println(11);
         return videoService.findByArtcileId(articleId);
     }
 }
