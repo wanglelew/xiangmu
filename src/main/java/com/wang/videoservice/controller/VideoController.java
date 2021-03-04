@@ -2,6 +2,7 @@ package com.wang.videoservice.controller;
 
 import com.wang.videoservice.entity.Video;
 import com.wang.videoservice.service.videoService;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,7 +18,7 @@ import javax.annotation.Resource;
 public class VideoController {
     @Resource
     private videoService videoService;
-    @RequestMapping("/getVideo")
+    @GetMapping("/getVideo")
     private Video getByArtcileId(Long articleId){
         System.out.println(11);
         return videoService.findByArtcileId(articleId);
