@@ -3,15 +3,9 @@ spring:
     name: video-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://49.232.185.35:3306/videoblog-video?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.168.200:3306/phone?characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&useSSL=false&serverTimezone=Asia/Shanghai&&allowMultiQueries=true
     username: root
-    password: wll2001
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
-        username: nacos
-        password: nacos
+    password: admin123456
 server:
   port: 2003
 mybatis:
